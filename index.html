@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>All-in-One News - See news from many media outlets in one place</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="bamtol company">
+  <meta name="robots" content="index, follow">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="google-site-verification" content="UhQkqPlA225MzqsxScvcuS6697b9sBfc8qAiIgFj0X0" />
+  <meta name="naver-site-verification" content="04815f3e125ccbf570511b852976b17b4eed0bce" />
+  <meta name="description" content="Comprehensive news portal provided by bamtol company. Today's popular news, entertainment, games, and tech news!">
+  <meta property="og:image" content="file_00000000d38861f7865053ec8f37e274_conversation_id=67fe6898-ef34-8000-a0d4-9c50844f68a0&message_id=832f8960-ba66-46bf-9795-6814eda7a7b6.png">
+  <style>
+    body {
+      background-color: #5BFF7B;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    button {
+      width: 300px;
+      height: 75px;
+      border-radius: 20px;
+    }
+
+    a:not(.no-style) {
+      font-size: 45px;
+      text-decoration: none;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+    button {
+      background-color: #FDFEC2;
+      margin: 2px;
+    }
+
+    .btn-container {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      margin: 0px;
+      height: 40px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 30px;
+    }
+
+    .popularnews {
+      background-color: #666666;
+      width: 500px;
+      margin-left: 400px;
+      color: white;
+      border-radius: 15px;
+      border: 5px solid black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      border: 2px solid;
+      border-radius: 8px;
+    }
+
+    input[type="button"] {
+      border: 2px solid;
+      border-radius: 8px;
+    }
+
+    iframe {
+      width: 500px;
+      height: 300px;
+      border-radius: 20px;
+    }
+
+    .ad {
+      border-top: 5px solid;
+      padding: 15px;
+      background-color: #E6E6E6;
+      width: 100%;
+    }
+
+    .adli {
+      width: 400px;
+      height: 200px;
+      border: 7px solid;
+      background-color: white;
+    }
+
+    li {
+      line-height: 1.3;
+      color: black;
+    }
+
+    .mbc {
+      width: 31%;
+      height: 220px;
+    }
+
+    @media (max-width: 800px) {
+      .news button {
+        width: 49%;
+        height: 90px;
+      }
+
+      .popularnews {
+        margin-left: 120px;
+      }
+
+      .ad {
+        width: 100%;
+      }
+
+      .btn-container {
+        top: 10px;
+      }
+
+      .mbc {
+        width: 45%;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .news button {
+        width: 90%;
+      }
+
+      .popularnews {
+        width: 95%;
+        height: 400px;
+        margin-left: 5px;
+      }
+
+      .inews {
+        margin: 0px;
+        width: 85%;
+        height: 250px;
+      }
+
+      .mbc {
+        width: 95%;
+        height: 300px;
+      }
+    }
+
+    #clock {
+      font-family: orbitron;
+    }
+
+    #date {
+      font-family: orbitron;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display:flex; gap:25px;">
+    <div id="date">----년 --월 --일 (---)</div>
+    <div id="clock">--:--:--</div>
+  </div>
+  <h1>See news from major domestic and international media outlets in one place.</h1>
+  <div class="btn-container">
+    <button style="width: 60px; height: 23px; background-color:#0063FF;" onclick="document.body.style.backgroundColor='#212121'; document.body.style.color='white'">🌙</button>
+    <button style="width: 60px; height: 23px; background-color:#0063FF;" onclick="document.body.style.backgroundColor='#5BFF7B'; document.body.style.color='black'">☀️</button>
+  </div>
+  <div class="news">
+    <h2>Domestic</h2>
+    <button><a href="https://imnews.imbc.com" target="_blank">MBC</a></button>
+    <button><a href="https://news.sbs.co.kr" target="_blank">SBS</a></button>
+    <button><a href="https://news.kbs.co.kr" target="_blank">KBS</a></button>
+    <button><a href="https://www.ytn.co.kr" target="_blank">YTN</a></button>
+    <button><a href="https://www.chosun.com" target="_blank">Chosun Ilbo</a></button>
+    <button><a href="https://www.hani.co.kr" target="_blank">Hankyoreh</a></button>
+    <h2>International</h2>
+    <button><a href="https://www.nytimes.com" target="_blank">NYT</a></button>
+    <button><a href="https://www.bbc.com/news" target="_blank">BBC</a></button>
+    <button><a href="https://www.cnn.com" target="_blank">CNN</a></button>
+    <button><a href="https://www3.nhk.or.jp/news/" target="_blank">NHK</a></button>
+    <button><a href="https://www.theguardian.com" target="_blank">Guardian</a></button>
+    <button><a href="https://tv.cctv.com/cctvnews/" target="_blank">CCTV</a></button>
+    <h2>News Platforms/Portals</h2>
+    <button><a href="https://news.naver.com/section/100" target="_blank">Naver News</a></button>
+    <button><a href="https://news.daum.net/" target="_blank">Daum News</a></button>
+     <button><a href="https://news.google.com/home?hl=en&gl=US&ceid=US:en" target="_blank" style="font-size:40px;">Google News</a></button>
+  </div>
+  <div class="popularnews" style="margin-top:30px; margin-bottom:20px;">
+    <p style="font-size:30px; text-align:center;">Popular News</p>
+    <iframe src="https://m.news.nate.com/rank/list?mid=m2001" class="inews"></iframe>
+  </div>
+  <div style="display:flex; gap:20px;">
+    <div style="background-color:#F9FF99; border-radius:15px; width:400px; border:solid 5px black;">
+      <div style="text-align:center;">
+        <h3 style="color:#333333;">News App Downloads (Android)</h3>
+      </div>
+      <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=com.imbc.imnews.mbcnews" class="no-style" style="color:blue;"><strong>MBC News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.cubeflux.news" class="no-style" style="color:blue;"><strong>SBS News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=kr.co.kbs.news301" class="no-style" style="color:blue;"><strong>KBS News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.estsoft.android.ytn" class="no-style" style="color:blue;"><strong>YTN News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.chosunmedia.android" class="no-style" style="color:blue;"><strong>Chosun Ilbo App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=kr.co.hani.news" class="no-style" style="color:blue;"><strong>Hankyoreh App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.nytimes.android" class="no-style" style="color:blue;"><strong>New York Times App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=bbc.mobile.news.ww" class="no-style" style="color:blue;"><strong>BBC News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone" class="no-style" style="color:blue;"><strong>CNN News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=jp.or.nhk.nhkworld.tv" class="no-style" style="color:blue;"><strong>NHK News App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.guardian" class="no-style" style="color:blue;"><strong>The Guardian App</strong></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.imib.cctv" class="no-style" style="color:blue;"><strong>CGTN(CCTV) News App</strong></a></li>
+      </ul>
+    </div>
+    <div style="background-color:#ADFFFD; border-radius:15px; width:400px; border:solid 5px black;">
+      <div style="text-align:center;">
+        <h3 style="color:#333333;">News App Downloads (ios)</h3>
+      </div>
+      <ul>
+        <li><a href="https://apps.apple.com/kr/app/mbc-%EB%89%B4%EC%8A%A4/id387713617" class="no-style" style="color:blue;"><strong>MBC News App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/sbsnews/id371932445" class="no-style" style="color:blue;"><strong>SBS News App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/kbs-%EB%89%B4%EC%8A%A4/id376746898" class="no-style" style="color:blue;"><strong>KBS News App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/ytn/id353117998" class="no-style" style="color:blue;"><strong>YTN News App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/%EC%A1%B0%EC%84%A0%EC%9D%BC%EB%B3%B4/id360677289" class="no-style" style="color:blue;"><strong>Chosun Ilbo App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/%ED%95%9C%EA%B2%A8%EB%A0%88/id420600963" class="no-style" style="color:blue;"><strong>Hankyoreh App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/the-new-york-times-live-news/id284862083" class="no-style" style="color:blue;"><strong>New York Times App</strong></a></li>
+        <li><a href="https://apps.apple.com/us/app/bbc-world-news-stories/id364147881" class="no-style" style="color:blue;"><strong>BBC News App</strong></a></li>
+        <li><a href="https://apps.apple.com/us/app/cnn-breaking-us-world-news/id331786748" class="no-style" style="color:blue;"><strong>CNN News App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/nhk-world-japan/id350732480" class="no-style" style="color:blue;"><strong>NHK News App</strong></a></li>
+        <li><a href="https://apps.apple.com/kr/app/the-guardian-live-world-news/id409128287" class="no-style" style="color:blue;"><strong>The Guardian App</strong></a></li>
+        <li><a href="https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E6%96%B0%E9%97%BB/id467289231" class="no-style" style="color:blue;"><strong>CCTV News App</strong></a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <p style="font-size:25px;">Developer Age Quiz:<input type="text" id="ageInput" placeholder="Guess the developer's age">
+    <input type="button" value="Check" onclick="확인();" style="height:46px;">
+  </p>
+  <div class="ad">
+    <h3 style="color:black;">News Preview</h3>
+    <iframe src="https://imnews.imbc.com" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://news.sbs.co.kr" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://news.kbs.co.kr" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://www.ytn.co.kr" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://www.chosun.com" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://www.hani.co.kr" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://www3.nhk.or.jp/news/" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+    <iframe src="https://tv.cctv.com/cctvnews/" style="background-color:white;margin:10px;" class="mbc" loading="lazy"></iframe>
+  </div>
+  <div class="information" style="background-color:white; height:100px; text-align:center;">
+   <a href="https://bamtolcompany.github.io/allinonenews_explanation/" class="no-style">Site Information</a>
+      <a href="https://m.youtube.com/watch?v=eFNeBNHqwGI&pp=0gcJCX4JAYcqIYzv" class="no-style">Send Feedback</a>
+      <a href="https://bamtolcompany.github.io/allinonenews_keyboard.shortcut/" class="no-style">Shortcuts</a>
+  </div>
+  <script>
+    function 확인() {
+      var age = document.getElementById("ageInput").value.trim().toLowerCase();
+      if (age === "13" || age === "13 years old") {
+        alert('Correct!'); //13살일때 맞음
+
+      }
+      else if (age === "2013") { alert('That\'s the year I was born. But am I really 2013 years old?'); } //2013이라고 했을때 메세지가 뜨게
+
+      else if (age === "bluescreen") {
+        alert('You can get rid of the bluescreen by refreshing the page. Press OK to experience the bluescreen.');
+        // 파란색 배경을 추가할 새로운 div 생성
+        let bluescreen = document.createElement('div');
+
+        document.body.style.backgroundColor = '#207CAD';
+
+        //블루스크린 스타일 설정
+        bluescreen.style.position = 'fixed'; // 고정 위치로 설정
+        bluescreen.style.top = '0';
+        bluescreen.style.left = '0';
+        bluescreen.style.width = '100%'; // 전체 화면 너비
+        bluescreen.style.height = '100%'; // 전체 화면 높이
+        bluescreen.style.padding = '50px';
+        bluescreen.style.backgroundColor = '#207CAD'; // 배경 색 파란색
+        bluescreen.style.zIndex = '9999'; // 다른 요소들 위에 표시
+
+        //기존 내용 안보이게 설정
+        bluescreen.style.display = 'flex';
+        bluescreen.style.alignItems = 'top';
+        bluescreen.style.justifyContent = 'center';
+
+        bluescreen.innerHTML = `
+
+         <div style="display: flex; flex-direction: column;">
+                <p style="font-size:140px; margin: 0; color:white;">:(</p>
+                <p style="color:white; font-size:30px; margin-top: 10px;">
+                    Your PC ran into a problem and needs to restart.<br>
+                    We're just collecting some error info, and then we'll restart for you.<br>
+                    (42% complete)
+                </p>
+            </div>
+        `; //블루스크린 화면
+        document.body.appendChild(bluescreen);
+      }
+      else if (age === "") { alert('Please enter some text.'); }
+      else {
+        alert('Incorrect. Hint: Two digits');
+      } //아닐때 틀림
+    }
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    }  // 최초 실행 후 매초마다 업데이트
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    function updateDate() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = now.getMonth() + 1;
+      const date = now.getDate();
+      const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const day = dayNames[now.getDay()];
+
+      document.getElementById('date').textContent = `${year} ${month} ${date} (${day})`;
+
+    }
+
+    updateDate();
+    document.addEventListener("keydown", function (event) {
+      if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "d") {
+        document.body.style.backgroundColor = "#212121";
+        document.body.style.color = "white";
+      }
+      else if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "l") {
+        document.body.style.backgroundColor = "#5BFF7B";
+        document.body.style.color = "black";
+      }
+    });
+  </script>
+
+</body>
+
+  </html>
