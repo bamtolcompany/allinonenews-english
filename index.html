@@ -357,6 +357,13 @@
        event.preventDefault();
        window.location.href = 'https://bamtolcompany.github.io/allinonenews/setting.html';}
     });
+    function 검색() {
+    const query = document.getElementById("search").value;
+    if (query) {
+      const googleUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}&tbm=nws`;
+      window.open(googleUrl, '_blank')}
+     else if (query === "" ) {alert('텍스트를 입력하세요');}
+  }
   </script>
 
 </body>
